@@ -123,7 +123,6 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
 		}
 
 		@media screen and (max-width: 736px) {
@@ -131,6 +130,22 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
+			}
+
+			.check-out {
+				display: none;
+			}
+
+			.my-circle-img {
+				margin-bottom: 2rem;
+			}
+
+			.icon.brands.small.fa-github {
+				font-size: 11pt;
+			}
+
+			.icon.small.live-site {
+				font-size: 11pt;
 			}
 
 		}
@@ -774,36 +789,15 @@ input, select, textarea {
 
 		}
 		@media screen and (max-width: 1124px) {
-			
+
+
+
+
+
+
 		}
 
 		@media screen and (max-width: 1280px) {
-
-			.contact-box {
-				width: auto;
-				/* background-color: #1d242a; */
-				opacity: .8;
-				padding: 10px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-right: 15px;
-
-			}
-			.contact-adjust {
-				width: auto;
-				padding: 0px;
-				margin: 0px;
-				/* background-color: orange; */
-
-			}
-
-
-			.success-box {
-				width: 100%;
-				padding-left: 60px;
-			}
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -3014,8 +3008,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			/* background-color: #505393; */
-			background-color: #21b2a6;
+			background-color: #505393;
+			/* background-color: #21b2a6; */
 			color: #d3d4e4;
 			/* opacity: .4; */
 			/* background-color: #21b2a6;
@@ -3923,7 +3917,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 2em 0 ;
 		background-color: #1d242a;
 		text-align: center;
 	}
@@ -3983,29 +3977,6 @@ input, select, textarea {
 
 				}
 				@media screen and (max-width: 804px) {
-					.style4 {
-						/* background-color: honeydew; */
-						padding: 0px;
-					}
-					.cont-x{
-						/* background-color: green; */
-						height: 100%;
-						width: 100%;
-						padding: 0px;
-						margin: 0px;
-						padding-top:50px;
-						background-color: #1d242a;
-						opacity: .8;
-					}
-
-					.contacto {
-						display: flex;
-
-						/* justify-content: center; */
-						/* background-color: pink; */
-						/* align-items: center; */
-						width: 100%;
-					}
 
 					.input-right {
 						/* background-color: yellow; */
@@ -4013,7 +3984,6 @@ input, select, textarea {
 						width: auto;
 						justify-content: left;
 					}
-
 
 				}
 
@@ -4071,10 +4041,11 @@ input, select, textarea {
 
 
 	.my-circle-img {
-		border-radius: 50%;
-		height: 250px;
-		width: 250px;
-		object-fit: cover;
+		width: 20%; /* 20% of the viewport width */
+		max-width: 250px; /* Maximum width of 250px */
+		height: auto; /* Maintain aspect ratio */
+		border-radius: 50%; /* Make it a circle */
+		object-fit: cover; /* Maintain aspect ratio and cover the circle */
 	}
 
 .check-out {
@@ -4082,20 +4053,8 @@ input, select, textarea {
 	cursor: pointer;
 }
 
-.contact-logos {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	height: 40px;
-	align-items: center;
-	/* background-color: pink; */
-	padding-top: 70px;
-	/* padding-bottom: 70px; */
-
-}
-
 .fa-github, .fa-linkedin, .fa-angellist {
-	font-size: 45px;
+	font-size: 2.5rem;
 }
 
 
@@ -4105,76 +4064,11 @@ input, select, textarea {
 	font-weight: bolder;
 }
 
-.fa-brands{
-	font-size: 80px;
-}
-
-.my-technologies {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.icon-box{
-	display: flex;
-	flex-direction: column;
-	padding: 40px;
-	justify-content: center;
-	align-items: center;
-}
-
-.tech-logo {
-	height: 80px;
-	width: 80px;
-}
-
-.email-form {
-	background-color: white;
-}
-
-.in-touch-icons{
-	display: flex;
-	flex-direction: row;
-}
-
-#contact-wrap {
-	display: flex;
-	justify-content: end;
-	width: 100%;
-}
-
-.contact-box {
-	width: 45em;
-	/* background-color: pink; */
-	display: flex;
-	flex-direction: column;
-	padding: 5px;
-
-}
-
-.contacto {
-	display: flex;
-	flex-direction: column;
-}
-
-#demo-message{
-	width: 600px;
-	height: 270px;
-}
-
-
-.success-box {
-	color: #ef5e4a;
-	/* width: 100%; */
-	display: block;
-	margin-top: -20px;
-	font-weight: bold;
-}
 
 .project-links {
 	display: flex;
-	gap: 20px;
+	gap: 25px;
+	padding: 0px;
 }
 
 .small {
@@ -4183,4 +4077,97 @@ input, select, textarea {
 
 .proj-img {
 	object-fit: cover;
+}
+
+
+
+/* =========== from chatgpt ========== */
+
+.technologies {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+
+  .tech-icon {
+	text-align: center;
+	margin: 20px;
+	margin: 2rem;
+	/* width: 100px; */
+	width: 5.2rem;
+	/* background-color: green; */
+  }
+
+  .tech-icon i {
+	/* font-size: 40px; */
+	font-size: 3rem;
+	margin-bottom: 10px;
+  }
+
+  .tech-icon p {
+	/* font-size: 18px; */
+	font-size: 1rem;
+  }
+
+  .tech-logo {
+	width: 40px;
+	height: 40px;
+  }
+
+
+
+/* =========== contact section ========== */
+
+.wrapper.style4 {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	width: 100vw;
+
+}
+.contact-wrapper {
+	/* background-color: green; */
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 100%;
+
+}
+
+.contact-area{
+	/* background-color: #00f0ff; */
+	width: 55vw;
+
+}
+
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	/* background-color: purple; */
+	width: 100%;
+
+}
+
+.success-box {
+	color: #ef5e4a;
+	display: block;
+	margin-top: -20px;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1281px) {
+
+	.contact-area{
+		/* background-color: #00f0ff; */
+		width: 30vw;
+
+	}
+
+}
+
+.contacto-box{
+	display: flex;
+	justify-content: center;
+	gap: 2.5rem;
 }
