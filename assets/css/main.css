@@ -4041,7 +4041,7 @@ input, select, textarea {
 
 
 	.my-circle-img {
-		width: 20%; /* 20% of the viewport width */
+		width: 20%; /* 20% of the viewport wdth */
 		max-width: 250px; /* Maximum width of 250px */
 		height: auto; /* Maintain aspect ratio */
 		border-radius: 50%; /* Make it a circle */
