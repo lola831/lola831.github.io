@@ -4171,3 +4171,15 @@ input, select, textarea {
 	justify-content: center;
 	gap: 2.5rem;
 }
+
+.status-label {
+	border-color: red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+
